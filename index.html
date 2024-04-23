@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pomodoro Timer First Brainstorm</title>
+    <link rel="icon" href="favicon.ico">
+</head>
+<body>
+    <header>
+        <h1>Pomodoro Timer First Brainstorm</h1>
+        <h2>brainstorming</h2>
+        <p>Date: 2024-04-15</p>
+    </header>
+    <main>
+        <nav>
+            <ul>
+              <li><a href="#home">home</a></li>
+              <li><a href="#attendance">attendance</a></li>
+              <li><a href="#agenda">agenda</a></li>
+              <li><a href="#bussines">businness</a></li>
+            </ul>
+        </nav>
+        <section>
+            <h3>Attendance</h3>
+            <ul>
+                <li>Taiki Yoshino</li>
+                <li><i>Purgatory Jiaojuro</i></li>
+                <li><em>Zenitsu Inosuke</em></li>
+            </ul>
+        </section>
+        <section>
+            <h3>Agenda</h3>
+            <ol>
+                <li>Review of the <span class="highlight">last meeting</span></li>
+                <li>Discussion of the presentation next week</li>
+            </ol>
+            <div id="div1">
+                <p><b>This is the div1</b></p>
+              </div>
+              <div id="div2">
+                <p><strong>this is the div2</strong></p>
+              </div>
+              
+        </section>
+        
+        <section>
+            <h3>Unfinished Business</h3>
+            <p>Review of <a href="https://www.google.com/">unresolved issues.</a></p>
+        </section>
+
+        <section>
+            <h3>New Business</h3>
+            <details>
+                <summary>Self introduction</summary>
+                <p>Click to see more</p>
+            </details>
+        </section>
+        <hr>
+        <aside>
+            <h3>Miscellaneous</h3>
+            <p>additional comments, <br> questions, <br>or concerns.</p>
+        </aside>
+        
+        <figure>
+            <img src="https://taiki-yoshino.github.io/Lab2_Starter/img.png"  width="200"  alt="">
+        </figure>
+
+        <audio controls>
+            <source src="https://taiki-yoshino.github.io/Lab2_Starter/audio_file/audio.m4a" type="audio/mp4">
+        </audio>
+        <br>
+
+        <video width="400" controls autoplay>
+            <source src="https://taiki-yoshino.github.io/Lab2_Starter/audio_file/video.mov" type="video/mp4">
+        </video>
+    </main>
+
+    <footer>
+        <form>
+            <fieldset>
+                <legend>Feedbackg</legend>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name">
+
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date">
+
+                <label for="favorite-color">Favorite Color:</label>
+                <input list="colors" id="favorite-color" name="favorite-color">
+                <datalist id="colors">
+                    <option value="Red"></option>
+                    <option value="Green"></option>
+                    <option value="Blue"></option>
+                </datalist>
+
+                <label for="service-rating">Rate our service:</label>
+                <select id="service-rating" name="service-rating">
+                    <option value="">Please choose an option</option>
+                    <option value="excellent">Excellent</option>
+                    <option value="good">Good</option>
+                </select>
+
+                <label for="suggestion">Suggestion:</label>
+                <textarea id="suggestion" name="suggestion"></textarea>
+
+                <label for="improve">Would you attend again?</label>
+                <input type="checkbox" id="improve" name="improve" value="yes"> Yes
+
+                <button type="submit">Submit Feedback</button>
+            </fieldset>
+        </form>
+    </footer>
+</body>
+</html>
