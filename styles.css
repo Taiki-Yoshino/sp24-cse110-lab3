@@ -1,0 +1,164 @@
+
+/* write down comments*/
+:root {
+    --main-color: rgb(100, 150, 200);
+    --highlight-color: #FF6347;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--main-color, lightgray);
+}
+
+header {
+    background-color: hsla(210, 50%, 20%, 0.9);
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    border-bottom: 1px solid #ccc; 
+    position:static;
+}
+
+h1 {
+    margin: 0;
+    margin-bottom: 2em;
+}
+
+nav {
+    width: 80vw; 
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #FFF;
+    overflow: hidden;
+    display: none;
+}
+
+nav li {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav li a:hover {
+    display: block;
+    color: black;
+    text-decoration: none;
+}
+
+main {
+    margin: 20px;
+}
+
+section {
+    margin: 20px 0;
+    padding: 20px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    background-color: color(display-p3 0 1 0 / 0.1);
+}
+
+.highlight {
+    background-color: var(--highlight-color);
+    color: white;
+}
+
+#div1 {
+    margin: auto;
+    width: 50%;
+    height: 50%;
+    max-width:1200px;
+    min-width:10px;
+    padding: 10px;
+}
+
+#div2 {
+    margin: 10px 20px;
+    padding:10px, 10px, 10px, 10px;
+    border-width: 3px;
+    border-style:solid;
+    border-color: black;
+    border-radius: 1%;
+}
+
+figure, audio, video {
+    margin: 10px 0;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    margin-bottom: 0.1in; 
+    margin: 1px, 1px, 1px, 1px;
+    position: flex;
+    display: grid;
+}
+
+form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-top: 1px;
+    margin-bottom: 1px;
+    margin-left: 1px;
+    margin-right: 1px;
+    
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.nav-item {
+    flex: 1 1 auto;
+    padding: 10px;
+    text-align: center;
+}
+
+
+
+input[type="text"],
+input[type="date"],
+textarea {
+    width: 100%;
+    padding: 8px;
+}
+
+button:active {
+    grid-column: span 2;
+    background-color: #444;
+    color: white;
+    border: none;
+    margin: auto;
+    padding-top: 10px; 
+    padding-bottom: 10px; 
+    padding-left: 10px;  
+    padding-right: 10px; 
+}
+
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+    }
+    
+    form {
+        grid-template-columns: 1fr;
+    }
+}
