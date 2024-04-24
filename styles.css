@@ -52,6 +52,10 @@ nav li {
     text-decoration: none;
 }
 
+p:has(span) {
+    color: yellow;
+}
+
 nav li a:hover {
     display: block;
     color: black;
@@ -132,7 +136,25 @@ form {
     text-align: center;
 }
 
+div span {
+    color: blue;
+}
 
+ul > li {
+    list-style-type: circle;
+}
+
+h2 ~ p {
+    margin-top: 20px;
+}
+
+h2 + p {
+    font-weight: bold;
+}
+
+div.active {
+    background-color: green;
+}
 
 input[type="text"],
 input[type="date"],
